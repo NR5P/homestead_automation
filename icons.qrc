@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/icons"/>
+    <qresource prefix="/">
+        <file>../../../Downloads/icons/2x/baseline_settings_black_18dp.png</file>
+    </qresource>
+</RCC>
