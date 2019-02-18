@@ -7,6 +7,8 @@ Window {
     visible: true
     width: 300
     height: 480
+    //width: mainScreen.implicitWidth
+    //height: mainScreen.implicitHeight
     title: qsTr("Homestead Automation")
 
     Page {

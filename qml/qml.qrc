@@ -6,5 +6,6 @@
         <file>DeviceName.qml</file>
         <file>menu.qml</file>
         <file>defaultPage.qml</file>
+        <file>irrigationSettings.qml</file>
     </qresource>
 </RCC>
