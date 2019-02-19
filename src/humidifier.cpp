@@ -4,3 +4,8 @@ Humidifier::Humidifier()
 {
 
 }
+
+void Humidifier::setHumidityDesired(int humidity)
+{
+
+}

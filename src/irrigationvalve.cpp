@@ -4,3 +4,8 @@ IrrigationValve::IrrigationValve()
 {
 
 }
+
+void IrrigationValve::setDays(QDate)
+{
+
+}

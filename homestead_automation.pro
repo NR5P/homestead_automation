@@ -18,7 +18,9 @@ SOURCES += \
     src/irrigationvalve.cpp \
     src/heater.cpp \
     src/light.cpp \
-    src/humidifier.cpp
+    src/humidifier.cpp \
+    src/cyclemode.cpp \
+    src/irrigationmode.cpp
 
 RESOURCES += qml/qml.qrc \
         images/resources.qrc
@@ -39,4 +41,6 @@ HEADERS += \
     src/irrigationvalve.h \
     src/heater.h \
     src/light.h \
-    src/humidifier.h
+    src/humidifier.h \
+    src/cyclemode.h \
+    src/irrigationmode.h

@@ -15,7 +15,6 @@ private:
     bool on; // is the timer object on or off?
     bool test; // true if in test mode
     bool currentState; // true if current state is running (right now). off if not.
-    QMap<QDateTime, QDateTime> timesOnOff; // times on and off
 
 public:
     Tool();
