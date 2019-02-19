@@ -13,7 +13,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        src/main.cpp
+        src/main.cpp \
+    src/tool.cpp \
+    src/irrigationvalve.cpp \
+    src/heater.cpp \
+    src/light.cpp \
+    src/humidifier.cpp
 
 RESOURCES += qml/qml.qrc \
         images/resources.qrc
@@ -28,3 +33,10 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+HEADERS += \
+    src/tool.h \
+    src/irrigationvalve.h \
+    src/heater.h \
+    src/light.h \
+    src/humidifier.h
