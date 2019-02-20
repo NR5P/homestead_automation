@@ -3,8 +3,10 @@
 
 #include<QDateTime>
 
+#include "tool.h"
 
-class Light
+
+class Light : Tool
 {
 private:
     QDateTime timeOn;
@@ -12,6 +14,7 @@ private:
 
 public:
     Light();
+    ~Light(){}
 
     // setters
     void setTimeOn(QDateTime time);
@@ -20,6 +23,8 @@ public:
     // getters
     QDateTime getTimeOn() {return timeOn;}
     QDateTime getTimeOff() {return timeOff;}
+
+    virtual void run();
 };
 
 #endif // LIGHT_H

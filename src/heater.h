@@ -1,8 +1,10 @@
 #ifndef HEATER_H
 #define HEATER_H
 
+#include "tool.h"
 
-class Heater
+
+class Heater : Tool
 {
 private:
     char fahrenOrCelc;
@@ -11,6 +13,7 @@ private:
 
 public:
     Heater();
+    ~Heater(){}
 
     // setters
     void setFahrenOrCelc(char tempType);
@@ -21,6 +24,8 @@ public:
     char getFahrenOrCelc() const {return fahrenOrCelc;}
     float getTempDesired() const {return tempDesired;}
     float getTempNow() const {return tempNow;}
+
+    virtual void run();
 };
 
 #endif // HEATER_H
