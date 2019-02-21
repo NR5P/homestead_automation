@@ -12,6 +12,8 @@ private:
     QDateTime timeOn;
     QDateTime timeOff;
 
+    bool on;
+
 public:
     Light();
     ~Light(){}
@@ -25,6 +27,7 @@ public:
     QDateTime getTimeOff() {return timeOff;}
 
     virtual void run();
+    virtual bool isOn();
 };
 
 #endif // LIGHT_H

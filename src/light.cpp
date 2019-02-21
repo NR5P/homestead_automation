@@ -23,3 +23,8 @@ void Light::run()
 {
 
 }
+
+bool Light::isOn()
+{
+    return this->on;
+}

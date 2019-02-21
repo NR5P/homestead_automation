@@ -20,3 +20,8 @@ void Humidifier::run()
 {
 
 }
+
+bool Humidifier::isOn()
+{
+    return this->on;
+}

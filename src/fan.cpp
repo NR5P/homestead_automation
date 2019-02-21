@@ -29,3 +29,8 @@ void Fan::run()
 {
 
 }
+
+bool Fan::isOn()
+{
+    return this->on;
+}

@@ -24,9 +24,14 @@ void Tool::run()
 {
     for (auto tool : systemComponentTools)
     {
-        if (on)
+        if (tool->isOn())
         {
             tool->run();
         }
     }
+}
+
+bool Tool::isOn()
+{
+    return this->on;
 }

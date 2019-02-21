@@ -8,6 +8,7 @@ class Heater : Tool
 {
 private:
     char fahrenOrCelc;
+    bool on;
     float tempDesired;
     float tempNow;
 
@@ -26,6 +27,7 @@ public:
     float getTempNow() const {return tempNow;}
 
     virtual void run();
+    virtual bool isOn();
 };
 
 #endif // HEATER_H

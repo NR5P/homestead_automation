@@ -29,3 +29,8 @@ void Heater::run()
 {
 
 }
+
+bool Heater::isOn()
+{
+    return this->on;
+}

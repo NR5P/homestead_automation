@@ -5,7 +5,7 @@ CycleMode::CycleMode()
 
 }
 
-void CycleMode::setCycleOnOffTimes(QDateTime, QDateTime)
+void CycleMode::setCycleOnOffTimes(QTime cycleOn, QTime cycleOff)
 {
 
 }
@@ -18,4 +18,9 @@ void CycleMode::setCycleOnOffTimes(QDateTime, QDateTime)
 void CycleMode::run()
 {
 
+}
+
+bool CycleMode::isOn()
+{
+    return this->on;
 }

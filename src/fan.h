@@ -8,6 +8,7 @@ class Fan : Tool
 {
 private:
     char fahrenOrCelc;
+    bool on;
     float tempNow;
     float tempDesired;
 
@@ -26,7 +27,7 @@ public:
     float getTempDesired() {return this->tempDesired;}
 
     virtual void run();
-
+    virtual bool isOn();
 };
 
 #endif // FAN_H

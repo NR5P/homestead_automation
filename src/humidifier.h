@@ -9,6 +9,7 @@ class Humidifier : Tool
 private:
     int humidityDesired;
     int humidityNow;
+    bool on;
 
 public:
     Humidifier();
@@ -23,6 +24,7 @@ public:
     int getHumidityNow() {return humidityNow;}
 
     virtual void run();
+    virtual bool isOn();
 };
 
 #endif // HUMIDIFIER_H

@@ -23,3 +23,8 @@ void IrrigationMode::run()
 {
 
 }
+
+bool IrrigationMode::isOn()
+{
+    return this->on;
+}

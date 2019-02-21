@@ -14,6 +14,8 @@ private:
     QMap<QDateTime, QDateTime> timesOnOff; // times on and off
     QVector<QDateTime> days;
 
+    bool on;
+
 public:
     IrrigationMode();
     ~IrrigationMode(){}
@@ -26,6 +28,7 @@ public:
     QVector<QDateTime> getDays() {return this->days;}
 
     virtual void run();
+    virtual bool isOn();
 };
 
 #endif // IRRIGATIONMODE_H
